@@ -29,18 +29,18 @@ body{
   color: rgb(43,1,51);
 
 }
-#header nav a:hover{
+ nav a:hover{
 background-color: rgba(0,0,0,.1)
 }
 
-#header .active a{
+ .active a{
   background-color: rgba(0,0,0,.1)
   }
 
-#header nav a:focus{
+ nav a:focus{
   background-color: rgba(0,0,0,.1)
 }
-#header nav{
+ nav{
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -55,4 +55,106 @@ background-color: rgba(0,0,0,.1)
   font-size:2em;
   padding: 0;
 
+}
+
+#book-section{
+  margin:50px 0;
+}
+
+.section-title{
+  padding: 20px 0;
+}
+
+.books-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+ .book-img img{
+  widows: 100%;
+  height: 200px;
+}
+ .book{
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+  background-color: #fff;
+}
+
+ .book-info{
+  padding: 10px;
+}
+
+ .book-title{
+  padding: 10px ;
+}
+ .book-author{
+  padding: 5px ;
+}
+
+
+
+.btn{
+  padding: 15px;
+ opacity: 0.9;
+  border:none;
+  outline: none;
+  cursor:pointer;
+  margin: 10px 0;
+}
+.btn:hover{
+opacity: 1;
+}
+.btn:focus{
+opacity: 1;
+  
+}
+.btn-highlight{
+  background-color: blueviolet;
+  color: white;
+}
+
+#book-detail{
+  margin:50px 0px;
+}
+
+#book-detail .book-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#book-detail .book-title{
+  padding-bottom: 15px;
+}
+
+#book-detail .book-author{
+  padding-bottom: 15px;
+}
+
+#book-detail .book-review-container{
+  display: flex;
+  font-size:1.2em;
+  justify-content: flex-end;
+  
+
+}
+#book-detail .book-stars{
+  color: rgb(204, 204, 41);
+  
+
+}
+
+#book-detail .book-review{
+  margin-left: 5px;
+}
+
+#page-not-found{
+  margin: 50px 0px;
+}
+
+#footer{
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.1em;
+  padding: 20px;
+  text-align: center;
 }

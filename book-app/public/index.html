@@ -27,7 +27,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <header id="header">
-    <div className="container">
+    <div class="container">
 
       <nav>
 
@@ -50,124 +50,94 @@
     </header>
 
     <section id="book-section">
-      <div className=""></div>
-<div className="section-title">
+      <div class="container">
+<div class="section-title">
   <h1>HTML Books</h1>
 </div>
-<div className="books-container">
-  <div className="book">
-    <div className="book-img" >
+<div class="books-container">
+  <div class="book">
+    <div class="book-img" >
       <img src="http://via.placeholder.com/250x200" alt=""/>
     </div>
-    <div className="book-title">
-      <h3>Book title</h3>
-    </div>
-    <div className="book=author">
-      <p>By<em>Author</em></p>
-    </div>
-    <div className="book-call-to-action">
-      <button className=" btn btn-highlight">Detail</button>
-    </div>
-    </div>
-  </div>
-  <div className="book">
-      <div className="book-img">
-        <img src="http://via.placeholder.com/250x200" alt=""/>
-      </div>
-      <div className="book-title">
-        <h3>Book title</h3>
-      </div>
-      <div className="book=author">
-        <p>By<em>Author</em></p>
-      </div>
-      <div className="book-call-to-action">
-        <button className=" btn btn-highlight">Detail</button>
-      </div>
-      </div>
-    </div> <div className="book">
-        <div className="book-img">
-          <img src="http://via.placeholder.com/250x200" alt=""/>
-        </div>
-        <div className="book-title">
-          <h3>Book title</h3>
-        </div>
-        <div className="book=author">
-          <p>By<em>Author</em></p>
-        </div>
-        <div className="book-call-to-action">
-          <button className=" btn btn-highlight">Detail</button>
-        </div>
-        </div>
-      </div> <div className="book">
-          <div className="book-img">
-            <img src="http://via.placeholder.com/250x200" alt=""/>
-          </div>
-          <div className="book-title">
+    <div class="book-info">
+        <div class="book-title">
             <h3>Book title</h3>
           </div>
-          <div className="book=author">
+          <div class="book=author">
             <p>By<em>Author</em></p>
           </div>
-          <div className="book-call-to-action">
-            <button className=" btn btn-highlight">Detail</button>
+          <div class="book-call-to-action">
+            <button class=" btn btn-highlight">Detail</button>
           </div>
+    </div>
+    
+    </div>
+  
+      <div class="books-container">
+        <div class="book">
+          <div class="book-img" >
+            <img src="http://via.placeholder.com/250x200" alt=""/>
           </div>
-        </div> <div className="book">
-            <div className="book-img">
-              <img src="http://via.placeholder.com/250x200" alt=""/>
-            </div>
-            <div className="book-title">
-              <h3>Book title</h3>
-            </div>
-            <div className="book=author">
-              <p>By<em>Author</em></p>
-            </div>
-            <div className="book-call-to-action">
-              <button className=" btn btn-highlight">Detail</button>
-            </div>
-            </div>
-          </div> <div className="book">
-              <div className="book-img">
-                <img src="http://via.placeholder.com/250x200" alt=""/>
-              </div>
-              <div className="book-title">
-                <h3>Book title</h3>
-              </div>
-              <div className="book=author">
-                <p>By<em>Author</em></p>
-              </div>
-              <div className="book-call-to-action">
-                <button className=" btn btn-highlight">Detail</button>
-              </div>
-              </div>
-            </div>
-</div>
-</div>
+          <div class="book-info">
+              <div class="book-title">
+                  <h3>Book title</h3>
+                </div>
+                <div class="book=author">
+                  <p>By<em>Author</em></p>
+                </div>
+                <div class="book-call-to-action">
+                  <button class=" btn btn-highlight">Detail</button>
+                </div>
+          </div>
+          
+          </div>
+        
+            <div class="books-container">
+              <div class="book">
+                <div class="book-img" >
+                  <img src="http://via.placeholder.com/250x200" alt=""/>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <h3>Book title</h3>
+                      </div>
+                      <div class="book-author">
+                        <p>By<em>Author</em></p>
+                      </div>
+                      <div class="book-call-to-action">
+                        <button class=" btn btn-highlight">Detail</button>
+                      </div>
+                </div>
+                
+                </div>
+  </div>
+  </div>
+ 
 
     </section>
 
 
     <section id="book-detail">
-      <div className="container">
-        <div className="book-container">
-          <div className="book-img">
+      <div class="container">
+        <div class="book-container">
+          <div class="book-img">
             <img src="http://via.placeholder.com/250x200/" alt="">
           </div>
-          <div className="book-info">
-            <div className="book-title">
+          <div class="book-info">
+            <div class="book-title">
               <h1>
                 Book title
               </h1>
             </div>
-            <div className="book-author">
+            <div class="book-author">
               <h3>Book Author</h3>
             </div>
             <div class="book-description">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatibus atque architecto. Eum, perferendis vel atque nam et dolorem ipsam autem ab illum quae vero deserunt assumenda voluptate eaque reiciendis!</p>
             </div>
           </div>
-          <div class="book-review">
-            <div class="book-start">
+          <div class="book-review-container">
+            <div class="book-stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -183,12 +153,17 @@
     </section>
 
     <section id="page-not-found">
-      <div className="container">
+      <div class="container">
       <h1>
         Page not found
       </h1>
       </div>
     </section>
+    <footer id="footer">
+      <div class="container">
+        <p>Create with &hearts; by RomaLama</p>
+      </div>
+      </footer>
 
     <!--
       This HTML file is a template.
