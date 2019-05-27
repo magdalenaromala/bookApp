@@ -44,10 +44,13 @@ background-color: rgba(0,0,0,.1)
   display:flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 #header .categories{
   display:flex;
+  
+ 
  
 }
 
@@ -157,4 +160,11 @@ opacity: 1;
   font-size: 1.1em;
   padding: 20px;
   text-align: center;
+  margin-top:auto;
+}
+
+.has-fixed-footer{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
 }
