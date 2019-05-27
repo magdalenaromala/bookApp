@@ -29,24 +29,24 @@ body{
   color: rgb(43,1,51);
 
 }
- nav a:hover{
+ #header nav a:hover{
 background-color: rgba(0,0,0,.1)
 }
 
- .active a{
+#header .active a{
   background-color: rgba(0,0,0,.1)
   }
 
- nav a:focus{
+  #header nav a:focus{
   background-color: rgba(0,0,0,.1)
 }
- nav{
+#header nav{
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.categories{
+#header .categories{
   display:flex;
  
 }
