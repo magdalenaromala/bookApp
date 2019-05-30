@@ -1,26 +1,29 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import NotFound from "./components/pages/page-not-found";
-import BookDetailPage from "./components/pages/book-detail-page";
-import BookSectionPage from "./components/pages/book-section-page";
+import React, { Component } from 'react';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import BooksSectionPage from '../src/pages/books-section';
+import BookDetailPage from '../src/pages/book-detail';
+import PageNotFound from '../src/pages/page-not-found';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={BookSectionPage} />
-        <Route
-          path="/book/category/:categoryName"
-          exact
-          render={props => {
-            return <BookSectionPage categoryName={props.match.params.categoryName} />;
-          }}
-        />
-        <Route path="/book/:book.id" component={BookDetailPage} />
-        <Route component={NotFound} />
-      </Switch>
-    </BrowserRouter>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={BooksSectionPage} />
+          <Route path="/books/category/:categoryName" exact render={(props) => {
+            let {categoryName} = props.match.params;
+            return <BooksSectionPage categoryName={categoryName} />
+          }} />
+          <Route path="/book/:bookID" render={(props) => {
+            let {bookID} = props.match.params;
+            return <BookDetailPage bookID={bookID}/>
+          }} />
+          }} /> 
+          <Route component={PageNotFound} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
