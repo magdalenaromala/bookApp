@@ -4,7 +4,7 @@ let Footer = (props) => {
     return (
         <footer id="footer">
             <div className="container">
-                <p>Made with &hearts; by Hichem MED</p>
+                <p>Made with &hearts; by RomaLama</p>
             </div>
         </footer>
     )
