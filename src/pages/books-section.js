@@ -14,7 +14,7 @@ class BooksSectionPage extends Component{
         }
     }
     componentDidMount(){
-        axios.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + this.props.categoryName + "&key=AIzaSyBXi7_S9aeCMk-IoIHQPuZDeVdL-_XrNyw")
+        axios.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + this.props.categoryName + "&key=AIzaSyBWoH1DjneITgZnDmBSUkuKhmMzaRzHfm4")
         .then((response) => {
             this.setState({
                 books: response.data.items,
@@ -27,7 +27,7 @@ class BooksSectionPage extends Component{
             this.setState({
                 isLoading:true,
             })
-            axios.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + this.props.categoryName + "&key=AIzaSyBXi7_S9aeCMk-IoIHQPuZDeVdL-_XrNyw")
+            axios.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + this.props.categoryName + "&key=AIzaSyBWoH1DjneITgZnDmBSUkuKhmMzaRzHfm4")
             .then((response) => {
                 this.setState({
                     books: response.data.items,
